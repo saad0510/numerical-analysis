@@ -1,6 +1,4 @@
 from math import *
-import numpy as np  
-import matplotlib.pyplot as plt
 
 # purpose: take x and y values from user
 # returns: tuple of two lists corresponding to x and y values
@@ -106,14 +104,6 @@ constants = []
 for d in dd:
     constants.append(d[0])
 
-# display equation:
-eq_str = f"P{n-1}x ="
-for i in range(0, len(constants)):
-    eq_str += f" {constants[i]:+.5}"
-    for j in range(0, i):
-        eq_str += f"(x - {x[j]})"
-print(eq_str)
-
 # equation function:
 def Px(x_value):
     y = 0
@@ -127,11 +117,3 @@ def Px(x_value):
 # evaluate at x0:
 x0 = float(input("input the target x > "))
 print(f"P{n-1}({x0:.3f}) = {Px(x0)}")
-
-# Display Graph:
-xx = np.arange(-100, 100, 0.01)
-yy = [Px(xin) for xin in xx]
-
-plt.plot(xx, yy)
-plt.grid()
-plt.show()

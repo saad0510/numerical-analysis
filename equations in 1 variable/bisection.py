@@ -1,6 +1,4 @@
 from math import *
-import matplotlib.pyplot as plt
-import numpy as np
 
 # INPUT PARAMATERS:
 eqn_str = input("equation for y=f(x) > ")
@@ -43,11 +41,5 @@ while n <= max_iterations:
     n = n + 1
 else:
     print("Method failed after maximum iterations")
+    
 print(line)
-
-# DISPLAY GRAPH:
-x = np.arange(-50, 50, 0.01)
-y = [fx(y) for y in x]
-plt.plot(x, y)
-plt.grid()
-plt.show()

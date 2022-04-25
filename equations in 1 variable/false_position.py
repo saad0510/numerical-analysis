@@ -1,6 +1,4 @@
 from math import *
-import matplotlib.pyplot as plt
-import numpy as np
 
 # INPUT PARAMATERS:
 eqn_str = input("equation for y=f(x) > ")
@@ -23,7 +21,7 @@ fb = fx(b)  # function at b
 
 while n <= max_iterations:
     # -- calculate c --
-    c = ((a*fb)-(b*fa))/(fb-fa)
+    c = ((a*fb)-(b*fa)) / (fb-fa)
     fc = fx(c)
     err = abs(fc)  # estimated absolute error
 
@@ -45,10 +43,3 @@ while n <= max_iterations:
 else:
     print("Method failed after maximum iterations")
 print(line)
-
-# DISPLAY GRAPH:
-x = np.arange(-11, 11, 0.001)
-y = [fx(xx) for xx in x]
-plt.plot(x, y)
-plt.grid()
-plt.show()

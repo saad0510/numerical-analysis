@@ -1,6 +1,4 @@
-from math import *  
-import numpy as np  
-import matplotlib.pyplot as plt
+from math import *
 
 # ----------------- functions ------------------- #
 def trapezoid(_x, _y):
@@ -63,11 +61,3 @@ else:
 
 print("result =", round(result, 5))
 print("absolute error:", round(abs(actual_value - result), 5))
-
-# Display Graph:
-xx = np.arange(-100, 100, 0.01)
-yy = [Px(xin) for xin in xx]
-
-plt.plot(xx, yy)
-plt.grid()
-plt.show()
