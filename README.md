@@ -3,6 +3,10 @@
 
 This repository contains python programs of common algorithms of numerical computing/analysis.
 
+1. Solutions of equations in one variable
+	- ![Bisection Method](./equations\ in\ 1\ variable/bisection.py)
+	- ![Secant Method](./interpolation/lagrange.py)
+	- False Position Method
 
 
 ## Authors
