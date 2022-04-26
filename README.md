@@ -4,10 +4,16 @@
 This repository contains python programs of common algorithms of numerical computing/analysis.
 
 1. Solutions of equations in one variable
-	- ![Bisection Method](./equations\ in\ 1\ variable/bisection.py)
-	- ![Secant Method](./interpolation/lagrange.py)
-	- False Position Method
-
+	- ![Bisection Method](./equations-in-1-variable/bisection.py)
+	- ![Secant Method](./equations-in-1-variable/secant.py)
+	- ![False Position Method](./equations-in-1-variable/false_position.py)
+2. Interpolation
+	- ![Lagrange Method](./interpolation/lagrange.py)
+	- ![Divided Differences Method](./interpolation/divided_difference.py)
+	- ![Forward Differences Method](./interpolation/forward_difference.py)
+	- ![Backward Differnces Method](./interpolation/backward_difference.py)
+3. Numerical Integration
+	- ![Newton-Cotes closed formulas](./numerical-integration/newton-cotes-closed.py)
 
 ## Authors
 
